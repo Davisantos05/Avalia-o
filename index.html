@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pesquisa Especial</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 id="titulo">Pesquisa de Satisfação</h1>
+    <p id="pergunta">Como você avaliaria o atendimento do restaurante?</p>
+    <div class="botoes" id="botoes">
+      <button onclick="proximaPergunta()">Ruim</button>
+      <button onclick="proximaPergunta()">Bom</button>
+      <button onclick="proximaPergunta()">Excelente</button>
+    </div>
+  </div>
+
+  <!-- Lottie para pétalas -->
+  <div class="lottie-container" id="lottie">
+    <lottie-player src="https://lottie.host/5b56c848-0372-4e4d-b209-4cb29064ad11/romantic-petals.json"
+                   background="transparent"
+                   speed="1"
+                   style="width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: -1;"
+                   loop autoplay></lottie-player>
+  </div>
+
+  <!-- Música romântica -->
+  <audio id="romanticMusic" src="musica-romantica.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
